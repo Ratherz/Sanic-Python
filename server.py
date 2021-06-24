@@ -54,5 +54,15 @@ def on_post(request):
         logger.error(f"{traceback.format_exc()}")
 
 
+@app.get('/gettest-json')
+async def get_test(request):
+    return json({
+        "name": "ratherz", 
+        "firstName": "sopon", 
+        "lastName": "Ngernsawang"
+        })
+
+
+
 # debug logs enabled with debug = True
 app.run(host="localhost", port=5050, debug=True)
