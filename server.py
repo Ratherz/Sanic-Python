@@ -62,6 +62,7 @@ async def get_test(request):
         "lastName": "Ngernsawang"
         })
 
+print("test")
 
 
 # debug logs enabled with debug = True
